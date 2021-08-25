@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
-import 'semantic-ui-css/semantic.min.css'
-import { Dimmer, Loader, Image, Segment } from 'semantic-ui-react'
 import commerce from "../lib/commerce";
 
 import Product from "../components/Product";
 import Menu from "../components/Menu";
+import HeroSlider from "../components/homepage/HeroSlider";
+import BannerThreeColumn from "../components/homepage/BannerThreeColumn";
+
+
 
 const HomePage = () => {
   const [products, setProducts] = useState([]);
@@ -21,26 +23,18 @@ const HomePage = () => {
   }, []);
 
   return (
-    <div className="ui container">
-      <Menu/>
-      <div className="ui grid cards">
-        {
-          products.length ?
-        products.map((product) => {
-          return <Product key={product.id} product={product} />;
-        })
-        : () => { return(
-          <Segment>
-            <Dimmer active inverted>
-              <Loader inverted content='Loading' />
-            </Dimmer>
-
-            <Image src='https://react.semantic-ui.com/images/wireframe/short-paragraph.png' />
-          </Segment>
-        )}
-        }
+      <div className="home-three">
+        <Menu/>
+        <HeroSlider/>
+        <BannerThreeColumn/>
+        <div className="">
+          {
+          /*products.map((product) => {
+            return <Product key={product.id} product={product} />;
+          })*/
+          }
+        </div>
       </div>
-    </div>
   );
 };
 
