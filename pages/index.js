@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import commerce from "../lib/commerce";
 
-import Product from "../components/Product";
 import Menu from "../components/Menu";
 import HeroSlider from "../components/homepage/HeroSlider";
 import BannerThreeColumn from "../components/homepage/BannerThreeColumn";
+import ProductTab from "../components/homepage/ProductTab";
 
 
 
@@ -27,6 +27,7 @@ const HomePage = () => {
         <Menu/>
         <HeroSlider/>
         <BannerThreeColumn/>
+        <ProductTab products={products}/>
         <div className="">
           {
           /*products.map((product) => {
