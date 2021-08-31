@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import commerce from "../lib/commerce";
 
 import Menu from "../components/Menu";
+import Footer from "../components/Footer";
 import HeroSlider from "../components/homepage/HeroSlider";
 import BannerThreeColumn from "../components/homepage/BannerThreeColumn";
 import ProductTab from "../components/homepage/ProductTab";
@@ -28,13 +29,7 @@ const HomePage = () => {
         <HeroSlider/>
         <BannerThreeColumn/>
         <ProductTab products={products}/>
-        <div className="">
-          {
-          /*products.map((product) => {
-            return <Product key={product.id} product={product} />;
-          })*/
-          }
-        </div>
+        <Footer/>
       </div>
   );
 };

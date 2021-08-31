@@ -40,7 +40,7 @@ const HeroSlider = () => {
               <div className="container">
                 <div className="row">
                   <div className="col-lg-6 col-md-7">
-                    <div className="slider-content">
+                    <div className="slider-content" style={{textAlign: "left"}}>
                       <p>Exclusive Offer -20% Off This Week </p>
                       <h1>Style Furniture Gallery </h1>
                       <div className="image d-inline-block">
@@ -69,7 +69,7 @@ const HeroSlider = () => {
               <div className="container">
                 <div className="row">
                   <div className="col-lg-6 col-md-7">
-                    <div className="slider-content">
+                    <div className="slider-content" style={{textAlign: "left"}}>
                       <p>Exclusive Offer -30% Off This Week </p>
                       <h1>Sofa Chair Classic </h1>
                       <div className="image d-inline-block">

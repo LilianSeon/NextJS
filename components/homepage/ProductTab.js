@@ -9,7 +9,7 @@ const ProductTab = ({ products }) => {
     const [activeItemIndex, setActiveItemIndex] = useState(0);
 
     return (
-        <div className="sub-col col-sm-12 col-md-12">
+        <div className="sub-col col-sm-12 col-md-12 h-auto">
             <div className="tt_tabsproduct_module tab-products owl-products">
                 <Tabs>
                     <TabList className="tab-heading nav nav-pills">
@@ -25,8 +25,8 @@ const ProductTab = ({ products }) => {
                                     <ItemsCarousel
                                         requestToChangeActive={setActiveItemIndex}
                                         activeItemIndex={activeItemIndex}
-                                        numberOfCards={4}
-                                        gutter={10}
+                                        numberOfCards={5}
+                                        gutter={0}
                                         leftChevron={<Image className="arrow-left" height="50" width="50" loader={() => "/assets/images/arrow.png"} src={"/assets/images/arrow.png"} alt={"arrow"} />}
                                         rightChevron={<Image height="50" width="50" loader={() => "/assets/images/arrow.png"} src={"/assets/images/arrow.png"} alt={"arrow"} />}
                                         outsideChevron={false}
